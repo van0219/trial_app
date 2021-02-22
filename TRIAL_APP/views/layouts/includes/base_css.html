@@ -1,0 +1,68 @@
+{% load static %}
+<!-- ================== BEGIN BASE CSS STYLE ================== -->
+<link href="{%static 'assets/css/default/googleapis.css' %}" rel="stylesheet" />
+<link href="{%static 'assets/plugins/jquery-ui/jquery-ui.min.css' %}" rel="stylesheet" />
+<link href="{%static 'assets/plugins/bootstrap/4.0.0/css/bootstrap.min.css' %}" rel="stylesheet" />
+<link href="{%static 'assets/plugins/font-awesome/5.0/css/fontawesome-all.min.css' %}" rel="stylesheet" />
+<link href="{%static 'assets/plugins/animate/animate.min.css' %}" rel="stylesheet" />
+<link href="{%static 'assets/css/default/style.min.css' %}" rel="stylesheet" />
+<link href="{%static 'assets/css/default/style-responsive.min.css' %}" rel="stylesheet" />
+<link href="{%static 'assets/css/default/theme/default.css' %}" rel="stylesheet" id="theme" />
+<link href="{%static 'assets/plugins/parsley/src/parsley.css' %}" rel="stylesheet" />
+<link rel="stylesheet" href="{%static 'assets/plugins/sweetalert/sweetalert.css' %}">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+<!-- ================== END BASE CSS STYLE ================== -->
+
+<style>
+    .Custom_Cancel > .sa-button-container > .cancel {
+        background-color: gray;
+        border-color: gray;
+    }
+    .Custom_Cancel > .sa-button-container > .cancel:hover {
+        background-color: gray;
+        border-color: gray;
+    }
+    .loader-wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .loader {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        border: 4px solid #ffffff;
+        animation: loader 2s infinite ease;
+    }
+    .loader-inner {
+        vertical-align: top;
+        display: inline-block;
+        width: 100%;
+        background-color: #ffffff;
+        animation: loader-inner 2s infinite ease-in;
+    }
+    @keyframes loader {
+        0% { transform: rotate(0deg);}
+        25% { transform: rotate(180deg);}
+        50% { transform: rotate(180deg);}
+        75% { transform: rotate(360deg);}
+        100% { transform: rotate(360deg);}
+    }
+    @keyframes loader-inner {
+        0% { height: 0%;}
+        25% { height: 0%;}
+        50% { height: 100%;}
+        75% { height: 100%;}
+        100% { height: 0%;}
+    }
+    .modal {
+        position: fixed;
+        z-index: 9999;
+    }
+</style>
